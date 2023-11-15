@@ -327,7 +327,7 @@
 <?php }else{ ?>
 
 <script type="text/javascript">
-    window.location.href="404";
+    window.location.href="404.php";
 </script>
 
 <?php } ?>
