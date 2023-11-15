@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.7
+-- version 4.7.6
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Jan 31, 2022 at 01:20 AM
--- Server version: 5.6.51-cll-lve
--- PHP Version: 7.3.32
+-- Host: localhost
+-- Generation Time: Nov 15, 2023 at 04:58 PM
+-- Server version: 10.1.29-MariaDB
+-- PHP Version: 7.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -4016,11 +4016,7 @@ CREATE TABLE `tbl_vehicle_details` (
   `reg_vehicle_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `tbl_vehicle_details`
---
-
-
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `tbl_vehicle_images`
@@ -5000,12 +4996,12 @@ CREATE TABLE `users_login` (
 --
 
 INSERT INTO `users_login` (`user_id`, `name`, `email`, `password`, `role`, `tel`, `create_date`) VALUES
-(9, 'Admin', 'admin@mail.com', '$2y$10$PcuSZ8AvNIvZ375rhM0P5e9sXZxTIQmNXmv3AMwm7RikMRSYm6wyC', '1', '0771188218', '2020-08-12 13:30:20'),
-(11, 'Sellathurai Ramesh', 'ramesh@bae.lk', '$2y$10$7k8y.lBGilfxB9laSfxPaONv3kvHVAuhp339X1LXNYtj4fWGXzafK', '2', '	0775587850', '2021-12-29 08:07:11'),
-(12, 'Prashan Yahathugoda', 'prashan@bae.lk', '$2y$10$rWvXU4g4md4ILly//Ceu6e3F2MuxQrsPcxadyntOwnIAORxxQdNyu', '0', '0766454545', '2021-12-30 15:37:31'),
-(13, 'Viraj Gunathilake', 'viraj@bae.lk', '$2y$10$/7CLC/iOxrLus4uiSd.vHe/e9bInBW2dungOnh1Po6ntrRRPHVyNW', '1', '0766174491', '2022-01-01 04:06:14'),
-(16, 'Service Advisor', 'sa@mail.com', '$2y$10$ny0uzQvPNrKmkJJe2ZChWuh9036YpA3AtESaVeyi4wdhILXPj48GC', '0', '2322', '2022-01-02 12:25:06'),
-(17, 'Panduka Wanigarathne', 'panduka@bae.lk', '$2y$10$gS20tAFCFMVrjnAnkPgJRujVe/F1E46GTY1hxDpiOBb.FrhvH5RWW', '1', '07730900053', '2022-01-07 01:52:42');
+(9, 'Admin', 'admin@mail.com', '83878c91171338902e0fe0fb97a8c47a', '1', '0771188218', '2020-08-12 13:30:20'),
+(11, 'Sellathurai Ramesh', 'ramesh@bae.lk', '83878c91171338902e0fe0fb97a8c47a', '2', '	0775587850', '2021-12-29 08:07:11'),
+(12, 'Prashan Yahathugoda', 'prashan@bae.lk', '83878c91171338902e0fe0fb97a8c47a', '0', '0766454545', '2021-12-30 15:37:31'),
+(13, 'Viraj Gunathilake', 'viraj@bae.lk', '83878c91171338902e0fe0fb97a8c47a', '1', '0766174491', '2022-01-01 04:06:14'),
+(16, 'Service Advisor', 'sa@mail.com', '83878c91171338902e0fe0fb97a8c47a', '0', '2322', '2022-01-02 12:25:06'),
+(17, 'Panduka Wanigarathne', 'panduka@bae.lk', '83878c91171338902e0fe0fb97a8c47a', '1', '07730900053', '2022-01-07 01:52:42');
 
 --
 -- Indexes for dumped tables
@@ -5343,7 +5339,7 @@ ALTER TABLE `tbl_item_cost`
 -- AUTO_INCREMENT for table `tbl_item_history`
 --
 ALTER TABLE `tbl_item_history`
-  MODIFY `item_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=566;
+  MODIFY `item_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=564;
 
 --
 -- AUTO_INCREMENT for table `tbl_item_price_batch`
@@ -5361,7 +5357,7 @@ ALTER TABLE `tbl_job_details`
 -- AUTO_INCREMENT for table `tbl_job_item`
 --
 ALTER TABLE `tbl_job_item`
-  MODIFY `job_item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=214;
+  MODIFY `job_item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=208;
 
 --
 -- AUTO_INCREMENT for table `tbl_job_labour`
@@ -5391,19 +5387,19 @@ ALTER TABLE `tbl_labour_paying`
 -- AUTO_INCREMENT for table `tbl_part_selling_details`
 --
 ALTER TABLE `tbl_part_selling_details`
-  MODIFY `part_selling_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `part_selling_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_part_selling_list`
 --
 ALTER TABLE `tbl_part_selling_list`
-  MODIFY `part_selling_list_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `part_selling_list_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_part_selling_tax`
 --
 ALTER TABLE `tbl_part_selling_tax`
-  MODIFY `part_selling_tax_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `part_selling_tax_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_receipt`
@@ -5433,7 +5429,7 @@ ALTER TABLE `tbl_vehicle`
 -- AUTO_INCREMENT for table `tbl_vehicle_details`
 --
 ALTER TABLE `tbl_vehicle_details`
-  MODIFY `v_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `v_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbl_vehicle_images`
