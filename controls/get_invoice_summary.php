@@ -133,7 +133,7 @@
                 <td style="display: none;">'.$InvoiceSaveId.'</td>
                 <td>BAE/IN/'.$InvoiceYear.'/'.$InvoiceNumber.'</td>
                 <td>
-                    <a href="old_invoice_final?i='.$InvoiceViewId.'" class="btn btn-success">Invoice</a>
+                    <a href="old_invoice_final.php?i='.$InvoiceViewId.'" class="btn btn-success">Invoice</a>
                     '.$Recept.'
                 </td>
                 <td>'.$CustomerName.'</td>

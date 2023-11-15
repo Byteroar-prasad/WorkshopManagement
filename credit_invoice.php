@@ -127,7 +127,7 @@
                                             <tr class="gradeA">
                                                 <td style="display: none;"><?php echo $InvoiceSaveId; ?></td>
                                                 <td>
-                                                    <button type="button" onclick="location.href='old_invoice_final?i=<?php echo base64_encode($row[0]); ?>'" class="btn btn-success waves-effect waves-light">Invoice</button>
+                                                    <button type="button" onclick="location.href='old_invoice_final.php?i=<?php echo base64_encode($row[0]); ?>'" class="btn btn-success waves-effect waves-light">Invoice</button>
                                                         
                                                     <button type="button" onclick="location.href='receipt?r=<?php echo base64_encode($row[1]); ?>'" class="btn btn-primary waves-effect waves-light">Receipt</button>
                                                 </td>

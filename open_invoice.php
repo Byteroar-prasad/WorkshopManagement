@@ -131,7 +131,7 @@
                                                 <td style="display: none;"><?php echo $InvoiceSaveId; ?></td>
                                                 <td>BAE/IN/<?php echo $InvoiceYear.'/'.$InvoiceNumber; ?></td>
                                                 <td>
-                                                    <button type="button" onclick="location.href='old_invoice_final?i=<?php echo base64_encode($row[0]); ?>'" class="btn btn-success">Invoice</button>
+                                                    <button type="button" onclick="location.href='old_invoice_final.php?i=<?php echo base64_encode($row[0]); ?>'" class="btn btn-success">Invoice</button>
                                                     <?php if ($stat=='0') { ?>
                                                     <button type="button" data-toggle="modal" data-target="#exampleModalCenter<?php echo $row[0]; ?>" class="btn btn-primary">Genarate Receipt</button>
                                                     <?php }else{ ?>
